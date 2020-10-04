@@ -97,12 +97,18 @@ int main(int argc, char** argv) {
             cur_col = 0;
         }
         werase(win);
-        for (int i = 0; i <= line_capacity && cur_line + i < str_num; i++) {
-            mvwprintw(win, i+1, 1, "%d: ", cur_line + i);
+        int i;
+        for (i = 0; i <= line_capacity && cur_line + i < str_num; i++) {
+            mvwprintw(win, i+1, 1, "%d: ", cur_line + i+1);
             if (strings[cur_line+i].len > cur_col) {
                 mvwaddnstr(win, i+1, 5, strings[cur_line+i].buf+cur_col, col_capacity-5);
             }
         }
+        while (i <= line_capacity) {
+            mvwprintw(win, i+1, 1, "%d: ", cur_line + i+1);
+            i++;
+        }
+
         box(win, 0, 0);
         wrefresh(win);
     } while((c = wgetch(win)) != 27);
