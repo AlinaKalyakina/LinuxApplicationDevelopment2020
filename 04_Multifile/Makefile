@@ -4,7 +4,7 @@ CFLAGS = -Wall -fPIC
 TEST_PARAMS1 = abc
 TEST_PARAMS3 = 12 34 56
 
-all:    README prog
+all:   test 
 
 prog:   const.o fun.o prog.o
 
