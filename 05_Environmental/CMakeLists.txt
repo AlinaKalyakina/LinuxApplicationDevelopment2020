@@ -23,7 +23,7 @@ add_executable(05_Environmental main.c)
 
 target_link_libraries(05_Environmental ${CURSES_LIBRARY} ${PCRE_LIBRARY})
 
-set (TRASH CMakeCache.txt cmake_install.cmake Makefile CMakeFiles 05_Environmental)
+set (TRASH ${CMAKE_BINARY_DIR}/CMakeCache.txt ${CMAKE_BINARY_DIR}/cmake_install.cmake ${CMAKE_BINARY_DIR}/Makefile ${CMAKE_BINARY_DIR}/CMakeFiles ${CMAKE_BINARY_DIR}/05_Environmental)
 
 add_custom_target(allclean
     COMMAND rm -rf ${TRASH}
