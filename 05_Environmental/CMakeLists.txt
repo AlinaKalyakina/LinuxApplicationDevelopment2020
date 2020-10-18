@@ -22,3 +22,9 @@ endif()
 add_executable(05_Environmental main.c)
 
 target_link_libraries(05_Environmental ${CURSES_LIBRARY} ${PCRE_LIBRARY})
+
+set (TRASH CMakeCache.txt cmake_install.cmake Makefile CMakeFiles 05_Environmental)
+
+add_custom_target(allclean
+    COMMAND rm -rf ${TRASH}
+)
