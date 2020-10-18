@@ -9,12 +9,8 @@ find_library(PCRE_LIBRARY pcre2-8)
 set(CURSES_NEED_NCURSES TRUE)
 set(CURSES_NEED_WIDE TRUE)
 
-option(WITHOUT_UTF "Turn off UTF" OFF)
-
 if(WITHOUT_UTF)
     add_definitions(-DWITHOUT_UTF=1)
-else()
-    add_definitions(-DWITHOUT_UTF=0)
 endif()
 
 include(CheckIncludeFile)
