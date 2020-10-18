@@ -45,7 +45,7 @@ int search(const char *AStr, const char* BStr, WINDOW* winO)
     if (re == NULL) {
         PCRE2_UCHAR buffer[256];
         pcre2_get_error_message(errnum, buffer, sizeof(buffer));
-        wprintw(winO, "PCRE2 compilation failed at offset %d: %s\n", (int)erroffs,
+        wprintw(winO, " PCRE2 compilation failed at offset %d: %s\n", (int)erroffs,
                buffer);
         return 1;
     }
@@ -58,12 +58,12 @@ int search(const char *AStr, const char* BStr, WINDOW* winO)
         switch(rc) {
             case PCRE2_ERROR_NOMATCH:
 //                printf("No match\n");
-                wprintw(winO, "%s\n", "No match");
+                wprintw(winO, " %s\n", "No match");
 
                 break;
             default:
                 //printf("Matching error %d\n", rc);
-                wprintw(winO, "%s\n", "Matching error");
+                wprintw(winO, " %s\n", "Matching error");
 
                 break;
         }
@@ -75,7 +75,7 @@ int search(const char *AStr, const char* BStr, WINDOW* winO)
     ovector = pcre2_get_ovector_pointer(match_data);
 
     for (i = 0; i < rc; i++)
-        wprintw(winO, "%2ld: %.*s\n", ovector[2*i],
+        wprintw(winO, " %2ld: %.*s\n", ovector[2*i],
                (int)(ovector[2*i+1] - ovector[2*i]),
                subject + ovector[2*i]);
 
