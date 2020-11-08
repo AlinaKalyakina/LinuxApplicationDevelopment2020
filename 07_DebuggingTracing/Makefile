@@ -18,7 +18,7 @@ test:
 	rm testFIXfile
 	@if [ -f testFIXfile ]; then echo "Error"; else echo "Ok"; fi;
 	touch testFIXfile
-	-LD_PRELOAD="./wrapper.so" rm testFIXfile
+	-LD_PRELOAD="./wrapper.so" rm testFIXfile || true
 	@if [ -f testFIXfile ]; then echo "Ok"; else echo "Error"; fi;
 
 clean:
