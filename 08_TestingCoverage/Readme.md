@@ -1,7 +1,7 @@
 # Сборка
 ## Просто тестирование
-mkdir build 
+mkdir build  
 make check
 ## Тестирование с покрытием
-mkdir build 
+mkdir build  
 make profile
