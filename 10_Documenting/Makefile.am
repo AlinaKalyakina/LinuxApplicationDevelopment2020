@@ -1,6 +1,6 @@
 bin_PROGRAMS=guesser
 guesser_SOURCES =main.c roman.c
-pkgdata_DATA=ru/LC_MESSAGES/guesser.mo guesser.1
+pkgdata_DATA=ru/LC_MESSAGES/guesser.mo guesser.manpage
 
 @DX_RULES@
 
@@ -21,7 +21,7 @@ update_translate: messages.pot ru.po
 %.manpage:	%
 	help2man --no-info --output=$@ --name='@PACKAGE_NAME@' ./$<
 
-manfile: guesser.manpage
+man: guesser.manpage
 	help2man ./guesser > guesser.manpage
 	man ./guesser.manpage
 
