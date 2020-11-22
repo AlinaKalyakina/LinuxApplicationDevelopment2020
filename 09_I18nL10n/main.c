@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
         while (1) {
             printf(_("Is your number greater than %d? Print 'yes' or 'no'"), middle);
             printf("\n");
-            scanf("%10s", buf);
+            scanf("%6s", buf);
             if (!strcmp(buf, _("yes"))) {
                 left = middle;
             } else if (!strcmp(buf, _("no"))) {
