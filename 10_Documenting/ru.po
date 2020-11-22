@@ -1,0 +1,74 @@
+# Russian translations for  09_I18nL10n package.
+# Copyright (C) 2020 THE  09_I18nL10n'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the  09_I18nL10n package.
+# Alina <alina@alina-tp300ld>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  09_I18nL10n\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-22 20:53+0300\n"
+"PO-Revision-Date: 2020-11-15 22:35+0300\n"
+"Last-Translator: Alina <alina@alina-tp300ld>\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. * Help string
+#: main.c:19
+msgid ""
+"Guesser is a program that guesses th number you've guessed\n"
+"\n"
+"Usage: guesser [OPTIONS]\n"
+"\n"
+"    --help\t\tprint this help, then exit\n"
+"    --version\t\tprint version number, then exit\n"
+"    -r\t\tuse roman numbers while guessing\n"
+"\n"
+"The guesser uses half dividion method.\n"
+msgstr ""
+"Guesser - программа, которая угдывает числа.\n"
+"\n"
+"Использование: guesser [Опции]\n"
+"\n"
+"    --help      Выводит это соощение и завершается\n"
+"    --version   Выводит версию программы и завершается\n"
+"    -r          Использовать римские цифры\n"
+"\n"
+"Эта программа угадывает ваше число с помощью половинного деления\n"
+
+#: main.c:50
+#, c-format
+msgid "Guess number between %d and %d"
+msgstr "Загадайте число между %d и %d"
+
+#: main.c:59
+#, c-format
+msgid "Is your number greater than %s? Print 'yes' or 'no'"
+msgstr "Ваше число больше %s? Напишите 'да' или 'нет'"
+
+#: main.c:61
+#, c-format
+msgid "Is your number greater than %d? Print 'yes' or 'no'"
+msgstr "Ваше число больше %d? Напишите 'да' или 'нет'"
+
+#: main.c:65
+msgid "yes"
+msgstr "да"
+
+#: main.c:67
+msgid "no"
+msgstr "нет"
+
+#: main.c:70
+msgid "Bad input, try again"
+msgstr "Некорректный ввод, попробуйте заново"
+
+#: main.c:76
+#, c-format
+msgid "You guessed the number %d"
+msgstr "Вы загадали число %ds"
