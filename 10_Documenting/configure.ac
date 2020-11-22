@@ -22,5 +22,7 @@ AC_CHECK_HEADERS([libintl.h locale.h stdlib.h string.h, assert.h])
 AC_CHECK_FUNCS([setlocale])
 
 AC_CONFIG_FILES([Makefile
-                Doxyfile])
+                Doxyfile
+                guesser.md
+                roman.md])
 AC_OUTPUT
