@@ -8,7 +8,7 @@ gint compare_less(gchar * a, gchar * b, GHashTable* pTable) {
 }
 
 void print(gchar* elem, GHashTable* pTable) {
-    fprintf(stderr, "%s %d\n", (gchar *)elem, GPOINTER_TO_INT(g_hash_table_lookup(pTable, elem)));
+    printf("%s %d\n", (gchar *)elem, GPOINTER_TO_INT(g_hash_table_lookup(pTable, elem)));
 }
 
 int main() {
