@@ -1,0 +1,25 @@
+/// @mainpage
+# @PACKAGE_NAME@ v. @PACKAGE_VERSION@  
+
+## Intro  
+
+This is free and __unencumbered__ software released into the *public domain*.  
+
+## Usage  
+
+Guesser is a program that guesses th number you've guessed  
+
+Usage: guesser [OPTIONS]    
+
+    --help		print this help, then exit  
+   
+    --version		print version number, then exit    
+ 
+    -r		use roman numbers while guessing    
+  
+The guesser uses half dividion method.  
+
+
+## Source  
+
+See sources in `main.c`, `roman.c`, `roman.h`  
