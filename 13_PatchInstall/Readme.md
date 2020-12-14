@@ -1,7 +1,7 @@
 # Установка
 ```
 autoreconf -fisv
-./configure --prefix /
+./configure --prefix=installation/path
 sudo make install
 ```
 ## Запуск русского варианта
